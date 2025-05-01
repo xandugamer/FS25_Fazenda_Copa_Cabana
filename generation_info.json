@@ -1,0 +1,94 @@
+{
+    "Texture": {
+        "coordinates": [
+            -15.485688095552744,
+            -54.408486089832444
+        ],
+        "bbox": [
+            -15.476479055317297,
+            -15.494897135788191,
+            -54.39893014169931,
+            -54.41804203796558
+        ],
+        "map_size": 2048,
+        "rotation": 0,
+        "minimum_x": -54.41804203796558,
+        "minimum_y": -15.494897135788191,
+        "maximum_x": -54.39893014169931,
+        "maximum_y": -15.476479055317297
+    },
+    "Background": {
+        "center_latitude": -15.485688095552744,
+        "center_longitude": -54.408486089832444,
+        "epsg3857_string": "-6059916.2561937375,-6053533.676512374,-1748429.7928881792,-1742047.2129215195 [EPSG:3857]",
+        "epsg3857_string_with_margin": "-6060416,-6053033,-1748929,-1741547 [EPSG:3857]",
+        "height": 6144,
+        "width": 6144,
+        "north": -15.458060974846402,
+        "south": -15.513315216259086,
+        "east": -54.37981824543304,
+        "west": -54.437153934231844,
+        "DEM": {
+            "original": {
+                "min": 593.0,
+                "max": 648.0,
+                "deviation": 55.0,
+                "dtype": "int16",
+                "shape": "(199, 206)"
+            },
+            "multiplied": {
+                "min": 593.0,
+                "max": 648.0,
+                "deviation": 55.0,
+                "dtype": "int16",
+                "shape": "(6144, 6144)"
+            },
+            "raised_lowered": {
+                "min": 130.0,
+                "max": 185.0,
+                "deviation": 55.0,
+                "dtype": "int16",
+                "shape": "(6144, 6144)"
+            },
+            "height_scale": {
+                "height_scale_from_settings": 255,
+                "adjusted_height_scale": 255,
+                "mesh_z_scaling_factor": 257.0,
+                "height_scale_multiplier": 1.0
+            },
+            "normalized": {
+                "min": 33410.0,
+                "max": 47545.0,
+                "deviation": 14135.0,
+                "dtype": "uint16",
+                "shape": "(6144, 6144)"
+            }
+        },
+        "Mesh": [
+            {
+                "name": "FULL",
+                "x_size": 6144.0,
+                "y_size": 6144.0,
+                "z_size": 54.5019,
+                "x_center": 0.141,
+                "y_center": -0.4446,
+                "z_center": -30.8094
+            }
+        ]
+    },
+    "GRLE": {},
+    "I3d": {},
+    "Config": {
+        "Overview": {
+            "epsg3857_string": "-6058852.492913511,-6054597.439792601,-1747365.911082492,-1743110.8578770505 [EPSG:3857]",
+            "epsg3857_string_with_margin": "-6059352,-6054097,-1747865,-1742610 [EPSG:3857]",
+            "south": -15.46727001508185,
+            "west": -15.504106176023638,
+            "north": -54.38937419356618,
+            "east": -54.42759798609871,
+            "height": 4096,
+            "width": 4096
+        }
+    },
+    "Satellite": {}
+}
