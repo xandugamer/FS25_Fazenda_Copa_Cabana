@@ -606,21 +606,21 @@
 
             <fog>
                 <groundFog>
-                    <coverageEdge0 min="0.05" max="0.4" />
-                    <coverageEdge1 min="0.6" max="1" />
-                    <extraHeight min="4" max="15" />
-                    <groundLevelDensity min="0.05" max="0.25" />
-                    <minValleyDepth min="3" max="8" />
-                    <startDayTimeMinutes min="180" max="280" />
-                    <endDayTimeMinutes min="480" max="600" />
+                    <coverageEdge0 min="0.0" max="0.0" />
+                    <coverageEdge1 min="0.0" max="0" />
+                    <extraHeight min="0" max="0" />
+                    <groundLevelDensity min="0.00" max="0.00" />
+                    <minValleyDepth min="0" max="0" />
+                    <startDayTimeMinutes min="0" max="0" />
+                    <endDayTimeMinutes min="0" max="0" />
                     <weatherTypes>
                         <weatherType name="SUN" />
                         <weatherType name="CLOUDY" />
                     </weatherTypes>
                 </groundFog>
                 <heightFog>
-                    <groundLevelDensity min="0.05" max="0.2" />
-                    <maxHeight min="420" max="600" />
+                    <groundLevelDensity min="0.0" max="0.0" />
+                    <maxHeight min="0" max="0" />
                 </heightFog>
             </fog>
         </season>
@@ -702,21 +702,21 @@
 
             <fog>
                 <groundFog>
-                    <coverageEdge0 min="0.05" max="0.4" />
-                    <coverageEdge1 min="0.6" max="1" />
-                    <extraHeight min="4" max="15" />
-                    <groundLevelDensity min="0.01" max="0.05" />
-                    <minValleyDepth min="3" max="8" />
-                    <startDayTimeMinutes min="180" max="280" />
-                    <endDayTimeMinutes min="480" max="600" />
+                    <coverageEdge0 min="0.0" max="0.0" />
+                    <coverageEdge1 min="0.0" max="0" />
+                    <extraHeight min="0" max="0" />
+                    <groundLevelDensity min="0.0" max="0.0" />
+                    <minValleyDepth min="0" max="0" />
+                    <startDayTimeMinutes min="0" max="0" />
+                    <endDayTimeMinutes min="0" max="0" />
                     <weatherTypes>
                         <weatherType name="SUN" />
                         <weatherType name="CLOUDY" />
                     </weatherTypes>
                 </groundFog>
                 <heightFog>
-                    <groundLevelDensity min="0.05" max="0.2" />
-                    <maxHeight min="420" max="600" />
+                    <groundLevelDensity min="0.0" max="0.0" />
+                    <maxHeight min="0" max="0" />
                 </heightFog>
             </fog>
         </season>
