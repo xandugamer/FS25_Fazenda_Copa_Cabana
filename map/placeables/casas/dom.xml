@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_object_farmhouse</name>
+        <image>map/placeables/casas/store_Dom.png</image>
+        <price>100000</price>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <lifetime>500</lifetime>
+        <dailyUpkeep>100</dailyUpkeep>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <rotation>0</rotation>
+
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>       
+        <vertexBufferMemoryUsage>357632</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>70400</indexBufferMemoryUsage>
+        <textureMemoryUsage>11010048</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+ 
+    <base>
+        <filename>map/placeables/casas/Dom.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+	
+		<testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+
+    </placement>
+
+     <hotspots>
+        <hotspot type="FARM" linkNode="0>" teleportNode="0>1|0|3" />
+    </hotspots>
+	
+	<clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="90" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea01Start" widthNode="indoorArea01Width" heightNode="indoorArea01Height"/>
+    </indoorAreas>
+	
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+	
+	<ai>
+        <updateAreas />
+    </ai>
+	
+	<foliageAreas />
+	
+	<lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <lightShape node="0>7|1" />	
+    </lights>
+	
+
+	<wardrobe triggerNode="0>1|1|0"/>
+
+    <farmhouse spawnNode="0>1|0|3">
+        <sleeping triggerNode="0>1|0|2" cameraNode="0>1|0|0"/>
+    </farmhouse>
+		
+    <i3dMappings>		 
+		 <i3dMapping id="levelArea1Start" node="0>6|0" />
+		 <i3dMapping id="levelArea1Width" node="0>6|0|0" />
+		 <i3dMapping id="levelArea1Height" node="0>6|0|1" />
+		 <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+		 <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+		 <i3dMapping id="indoorArea01Height" node="0>4|0|1" />
+		 <i3dMapping id="indoorArea01Width" node="0>4|0|0" />
+		 <i3dMapping id="indoorArea01Start" node="0>4|0" />
+		 <i3dMapping id="clearArea1Start" node="0>3|0" />
+		 <i3dMapping id="clearArea1Width" node="0>3|0|0" />
+		 <i3dMapping id="clearArea1Height" node="0>3|0|1" />
+		 <i3dMapping id="testArea1Start" node="0>2|0" />
+		 <i3dMapping id="testArea1End" node="0>2|0|0" />	
+	</i3dMappings>
+</placeable>

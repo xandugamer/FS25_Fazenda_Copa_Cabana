@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="seedSilo.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="25" filename="$data/maps/mapEU/textures/props/propsDecals_diffuse.png"/>
+    <File fileId="26" filename="$data/maps/mapEU/textures/props/propsDecals_specular.png"/>
+    <File fileId="21" filename="$data/objects/pallets/liquidTank/fertilizerTank_diffuse.dds"/>
+    <File fileId="22" filename="$data/objects/pallets/liquidTank/fertilizerTank_normal.dds"/>
+    <File fileId="23" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.dds"/>
+    <File fileId="13" filename="$data/placeables/unia/shared/uniaSilosGrid_diffuse.dds"/>
+    <File fileId="14" filename="$data/placeables/unia/shared/uniaSilosGrid_normal.dds"/>
+    <File fileId="15" filename="$data/placeables/unia/shared/uniaSilosGrid_specular.dds"/>
+    <File fileId="17" filename="$data/placeables/unia/shared/uniaSilos_diffuse.dds"/>
+    <File fileId="18" filename="$data/placeables/unia/shared/uniaSilos_normal.dds"/>
+    <File fileId="19" filename="$data/placeables/unia/shared/uniaSilos_specular.dds"/>
+    <File fileId="6" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="27" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="16" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="3" filename="../textures/TexturesCom_Paint_Rusted2_512_albedo.dds"/>
+    <File fileId="12" filename="../textures/TexturesCom_Paint_Rusted2_512_height.dds"/>
+    <File fileId="4" filename="../textures/TexturesCom_Paint_Rusted2_512_normal.dds"/>
+    <File fileId="5" filename="../textures/TexturesCom_Paint_Rusted2_512_specular.dds"/>
+    <File fileId="29" filename="../textures/euroPallet01_normal.png"/>
+    <File fileId="30" filename="../textures/euroPallet01_specular.png"/>
+    <File fileId="28" filename="../textures/euroPallet02_diffuse.png"/>
+    <File fileId="20" filename="../textures/siloSeed_mask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="collision_mat" materialId="5" diffuseColor="1 0 0 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="euroPallet02_mat" materialId="6">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="kratka_mat" materialId="7" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="snowScale" value="0"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lambert2_mat" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="propsDecals_mat" materialId="11" alphaBlending="true" customShaderId="27">
+      <Texture fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="rust_mat" materialId="12" customShaderId="6" customShaderVariation="customParallax">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="12"/>
+    </Material>
+    <Material name="silo_mat" materialId="13" customShaderId="6">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="mMaskMap" fileId="20"/>
+      <CustomParameter name="dirtMossSmoothness" value="1 0.12"/>
+    </Material>
+    <Material name="tank_mat" materialId="14" customShaderId="16">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="tipCol_mat" materialId="15" diffuseColor="0.8 0.8 0 1" specularColor="0.501961 1 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="seedSilo.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="seedSilo" nodeId="35">
+      <TransformGroup name="clearAreas" nodeId="36">
+        <TransformGroup name="clearAreaStart01" translation="-3.504 0 -4.81326" nodeId="37">
+          <TransformGroup name="clearAreaWidth01" translation="1.5e-05 0 13.669" nodeId="38"/>
+          <TransformGroup name="clearAreaHeight01" translation="7.88 0 0" nodeId="39"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="40">
+        <TransformGroup name="levelAreaStart01" translation="-3.504 0 -4.81326" nodeId="41">
+          <TransformGroup name="levelAreaWidth01" translation="1.5e-05 0 13.669" nodeId="42"/>
+          <TransformGroup name="levelAreaHeight01" translation="7.88 0 0" nodeId="43"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="44">
+        <TransformGroup name="indoorAreaStart01" translation="-3.50384 0 -4.81326" nodeId="45">
+          <TransformGroup name="indoorAreaWidth01" translation="7.68131 0 0" nodeId="46"/>
+          <TransformGroup name="indoorAreaHeight01" translation="0 0 14.0061" nodeId="47"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="48">
+        <TransformGroup name="testAreaStart01" translation="-3.5816 0 -5.16007" nodeId="49">
+          <TransformGroup name="testAreaEnd01" translation="7.51607 13.8022 14.3566" nodeId="50"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="51">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-4.80009 0 -5.62408" nodeId="52">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="9.2044 0 14.9247" nodeId="53"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="silo" nodeId="54">
+        <TransformGroup name="loadingStation" translation="0.0999374 4.94047 -0.0785639" nodeId="55">
+          <TransformGroup name="loadingTriggers" translation="0 -0.215055 0" nodeId="56">
+            <Shape name="loadingTrigger" translation="0 0.908079 -0.013935" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+            <TransformGroup name="dischargeNode" nodeId="58"/>
+            <TransformGroup name="dischargeEffect" nodeId="59">
+              <Shape name="pipeEffect" translation="0 0.908079 -0.013935" rotation="90 0 0" shapeId="2" clipDistance="300" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="10"/>
+              <Shape name="pipeEffectSmoke" translation="0 -3.62503 0" shapeId="3" clipDistance="100" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="aiLoadingNode" translation="3.92149e-08 -3.79818 -0.017971" rotation="0 -90 0" nodeId="62"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="0 -0.024887 -4.70944" nodeId="63">
+          <Shape name="exactFillRootNode" translation="0 0 0.460561" shapeId="4" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          <TransformGroup name="grainGutterLinkNode" translation="0 0.024887 0.534098" scale="0.65 0.65 0.65" nodeId="65"/>
+          <TransformGroup name="aiUnloadingNode" translation="-0.01187 0.2 0.535202" rotation="0 -90 0" nodeId="66"/>
+        </TransformGroup>
+        <Shape name="infoTrigger" translation="-5.38588e-07 -0.031274 2.1978" rotation="0 90 0" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="aiSpline" translation="0.523932 0 0.0134635" shapeId="6" nodeId="68" castsShadows="false" receiveShadows="false"/>
+        <TransformGroup name="mapPosition" translation="-0.178355 0 -0.124089" nodeId="70"/>
+        <TransformGroup name="storage" nodeId="71"/>
+        <TransformGroup name="markerLoading" translation="3.68052e-07 0 0.0151289" rotation="0 -90 0" nodeId="72"/>
+        <TransformGroup name="markerUnloading" translation="8.78175e-07 0 -4.85606" rotation="0 -90 0" nodeId="73"/>
+        <TransformGroup name="teleportNode" translation="3.7157 -1.51473e-07 0.00912692" rotation="-180 -90 -180" nodeId="74"/>
+        <TransformGroup name="storage1" nodeId="75"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="76">
+        <TransformGroup name="visual_lod" lodDistance="0 100" lodBlending="false" clipDistance="800" nodeId="77">
+          <TransformGroup name="LOD0" nodeId="78">
+            <Shape name="konstrukcja" rotation="90 -0 0" shapeId="7" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Shape name="kratka" rotation="90 -0 0" shapeId="8" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="silos" rotation="90 -0 0" shapeId="9" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="zbiornik" rotation="90 -0 0" shapeId="10" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="14"/>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="83">
+            <Shape name="konstrukcja.001" rotation="90 -0 0" shapeId="11" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="12"/>
+            <Shape name="silos.001" rotation="90 -0 0" shapeId="12" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="13"/>
+            <Shape name="zbiornik.001" rotation="90 -0 0" shapeId="13" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="14"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="pallets" nodeId="87">
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70614 0.000683288 3.95467" rotation="-7.37979e-10 90 0" scale="1.5144 1.5144 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="89" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70614 0.264291 3.95467" rotation="-7.37979e-10 90 0" scale="1.5144 1.5144 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="92" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70614 0.51499 3.95467" rotation="-7.37979e-10 90 0" scale="1.5144 1.5144 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="95" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70614 0.770884 3.95467" rotation="-7.37979e-10 90 0" scale="1.5144 1.5144 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="98" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70614 1.02426 3.95467" rotation="-7.37979e-10 90 0" scale="1.5144 0.935805 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="101" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.71112 -0.00407273 5.81911" rotation="-7.31592e-21 85.5222 7.37979e-10" scale="1.5144 1.70509 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="103" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="104" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.7106 0.276314 5.82579" rotation="-7.31592e-21 85.5222 7.37979e-10" scale="1.5144 1.80335 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="106" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="107" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.70965 0.569654 5.8378" rotation="-7.31592e-21 85.5222 7.37979e-10" scale="1.5144 1.74105 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="110" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.56502 0.0119352 7.71399" rotation="-3.57075e-20 89.0829 7.37979e-10" scale="1.5144 1 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="112" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="113" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.56502 0.182681 7.71399" rotation="-3.57075e-20 89.0829 7.37979e-10" scale="1.5144 1 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="115" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="116" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+          <Shape name="euroPalletOld" lockedgroup="true" translation="2.56502 0.338267 7.71399" rotation="-3.57075e-20 89.0829 7.37979e-10" scale="1.5144 0.755593 1.84489" shapeId="14" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="118" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+            <Shape name="decal" shapeId="15" clipDistance="20" nodeId="119" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11"/>
+            <Shape name="euroPalletOld_vis" shapeId="16" clipDistance="80" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="121">
+        <Shape name="collision" rotation="1.23238e-05 8.35529e-15 -9.19391e-06" shapeId="17" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="122" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="5"/>
+        <Shape name="tipCol" shapeId="18" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="123" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="15"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

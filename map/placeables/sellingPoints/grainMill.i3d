@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grainMill" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grainMill.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grainMill" nodeId="1">
+      <TransformGroup name="sellingStation" nodeId="2">
+        <Shape name="unloadTrigger" translation="0 0.061067 0" rotation="0 0 -0.354369" shapeId="1" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x60000000" collisionFilterMask="0x40000000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="3"/>
+        <TransformGroup name="unloadTriggerMarker" nodeId="4"/>
+        <TransformGroup name="teleportNode" nodeId="5"/>
+        <TransformGroup name="unloadTriggerAINode" rotation="0 -90 0" nodeId="6"/>
+        <Shape name="aiSpline" shapeId="2" nodeId="7"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

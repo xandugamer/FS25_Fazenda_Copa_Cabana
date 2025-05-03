@@ -23,6 +23,7 @@
     <storeItem xmlFilename="$data/placeables/mapUS/grainElevatorMuseum/grainElevatorMuseum.xml"/> <!-- buildUp -->
     <storeItem xmlFilename="$data/placeables/mapUS/playgroundMaker/playgroundMakerShip.xml"/> <!-- buildUp -->
     <storeItem xmlFilename="$data/placeables/mapUS/trainSystem/trainSystem.xml" />
+	<storeItem xmlFilename="data/map/placeables/sellingPoints/grainMill.xml"/>
 
     <storeItem xmlFilename="$data/placeables/mapUS/sellingPoints/sellingStationTrain/sellingStationTrain.xml"/> <!-- trainOnly -->
     <storeItem xmlFilename="$data/placeables/mapUS/sellingPoints/grainElevatorTriggers/grainElevatorTriggers.xml" /> <!-- trainSilo -->
@@ -65,5 +66,7 @@
 
 <!-- DECORATION -->
 	<storeItem xmlFilename="data/map/placeables/barracaoMetal/XML/BrMetalShed01.xml"/>
+	<storeItem xmlFilename="data/map/placeables/silos/xml/farmSilo.xml"/>
+	<storeItem xmlFilename="data/map/placeables/casas/dom.xml"/>
     <storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" /> <!-- showInStore false -->
 </storeItems>

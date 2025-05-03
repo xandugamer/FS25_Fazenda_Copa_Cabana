@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="97">
+    <author>Raider</author>
+    <version>1.0.0.1</version>
+    <title>
+   <en>Old State Agricultural Farm Silos</en>
+   <de>Alte Staatliche Landwirtschaftliche Farmsilos</de>
+   <fr>Silos De L'ancienne Ferme Agricole D'État</fr>
+   <pl>Stare Silosy PGR</pl>
+</title>
+    <description>
+<en>
+<![CDATA[
+Large Polish silo in the style of an old state farm.
+
+Category: Silos
+Price: $ 127,000
+Daily upkeep: $ 150
+Capacity: 950000 l
+
+The silo is used to store seeds and solid fertilizer.
+Price: 15000 $ 
+Daily upkeep: 10 $
+Capacity: 50000 l
+
+Old Polish silage silo.
+
+Category: Silo
+Price: $ 45,000
+Daily upkeep: $ 100
+
+Changelog: 1.0.0.1
+- fixed collisions of protective barriers
+]]></en>
+<de>
+<![CDATA[
+Großes polnisches Getreidesilo im Stil eines alten Staatsguts.
+
+Shopkategorie: Silos
+Preis: 127.000 €
+Täglicher Unterhalt: 150 €
+Kapazität: 950000 l
+
+Trockentank zur Lagerung von Herbiziden und Flüssigdünger.
+Preis: 15000 €
+Täglicher Unterhalt: 10 €
+Kapazität: 50000 l
+
+Alter polnischer Silagesilo.
+
+Shopkategorie: Silo
+Preis: 45.000 €
+Täglicher Unterhalt: 100 €
+
+Änderungsprotokoll: 1.0.0.1
+- Kollisionen von Schutzbarrieren behoben
+]]></de>
+<fr><![CDATA[
+Grand silo polonais dans le style d'une ancienne ferme d'État.
+
+Catégorie: Silos
+Prix: 127 000 €
+Entretien quotidien: 150 €
+Capacité: 950000 l
+
+Le silo sert à stocker les semences et les engrais solides.
+Prix: 15 000 €
+Entretien quotidien: 10 €
+Capacité: 50000 l
+
+Ancien silo d'ensilage polonais.
+
+Catégorie: Silo
+Prix: 45 000 €
+Entretien quotidien: 100 €
+
+Journal des modifications : 1.0.0.1
+- Correction des collisions des barrières de protection
+]]></fr>
+<pl><![CDATA[
+Duży polski silos w styli starego gospodarstwa PGR.
+
+Kategoria: Silosy
+Cena: 127 000 €
+Miesięczne utrzymanie: 150 €
+Pojemność: 950000 l
+
+Silos służy do magazynowania nasion i nawozu stałego. 
+
+
+Cena: 15 000 €
+Miesięczne utrzymanie: 10 €
+Pojemność: 50000 l
+
+Stary polski silos na kiszonke.
+
+Kategoria: Silos
+Cena: 45 000 €
+Miesięczne utrzymanie: 100 €
+
+Dziennik zmian: 1.0.0.1
+- poprawiono kolizje barier ochronnych
+]]></pl>
+</description>
+    <iconFilename>icon_OldStateAgriculturalFarmSilos.png</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="xml/farmSilo.xml"/>
+		 <storeItem xmlFilename="xml/seedSilo.xml"/> 
+		  <storeItem xmlFilename="xml/bunkerSilo.xml"/>
+    </storeItems>
+
+    <l10n>
+<text name="storeItem_silosPGR">
+   <br>Cargil</br>
+</text>
+<text name="storeItem_seedSilo">
+        <en>Seed And Fertilizer Silo</en>
+        <de>Saatgut Und Düngemittelsilo</de>
+        <fr>Silo A Semences Et Engrais</fr>
+        <pl>Silos Na Nasiona I Nawozy</pl>
+</text>
+<text name="function_seedSilo">
+   <en>Silo for storing seeds and fertilizer</en>
+   <de>Silo zur Lagerung von Saatgut und Dünger</de>
+   <fr>Silo pour le stockage des semences et de l'engrais</fr>
+   <pl>Silos do magazynowania nasion i nawozu</pl>
+</text>
+<text name="storeItem_oldBunkerSilo">
+<en>Old bunker silo</en>
+<de>Alter bunkersilo</de>
+<fr>Ancien silo bunker</fr>
+<pl>Stary silos na kiszonke</pl>
+</text>
+
+</l10n>
+</modDesc>

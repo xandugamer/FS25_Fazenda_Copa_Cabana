@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>A2</author>
+    <version>1.0.0.0</version>
+    <title>
+		<en>House</en>
+		<de>Haus</de>
+		<fr>Maison</fr>
+	</title>
+	
+  <description>
+<en><![CDATA[
+A nice European style house where you can spend the night
+Building cost: $100,000
+Daily cost: $100
+]]></en>
+<de><![CDATA[
+Ein schönes Haus im europäischen Stil, in dem Sie übernachten können
+Baukosten: 100.000 €
+Tageskosten: 100 €
+]]></de>
+<fr><![CDATA[
+Une jolie maison de style européen où vous pourrez passer la nuit
+Coût de construction : 100.000 $
+Coût quotidien : 100 $
+]]></fr>
+</description>
+	
+    <iconFilename>icon_Dom.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+    <storeItems>
+        <storeItem xmlFilename="dom.xml"/>
+    </storeItems>
+        
+</modDesc>

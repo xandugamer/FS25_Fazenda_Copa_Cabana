@@ -36,5 +36,8 @@ Shopkategorie: Maps
 
     <storeItems>
         <storeItem xmlFilename="map/placeables/barracaoMetal/XML/BrMetalShed01.xml"/>
+		<storeItem xmlFilename="map/placeables/silos/xml/farmSilo.xml"/>
+		<storeItem xmlFilename="map/placeables/sellingPoints/grainMill.xml"/>
+		<storeItem xmlFilename="map/placeables/casas/dom.xml"/>
     </storeItems>
 </modDesc>

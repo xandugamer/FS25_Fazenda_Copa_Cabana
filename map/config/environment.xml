@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <environment dayNightCycle="true" startHour="8">
-    <latitude>40.6</latitude>
+    <latitude>-15.50</latitude>
 
     <map filename="$data/maps/mapUS/data/infoLayer_environment.grle" numChannels="2" >
         <isInCity value="1" />

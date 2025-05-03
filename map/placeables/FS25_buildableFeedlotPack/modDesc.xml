@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Schultz Modding</author>
+		<contributor></contributor>
+    <version>1.0.0.0</version>
+    <iconFilename>icon_FeedlotPack.dds</iconFilename>
+    <title>
+        <en>Buildable Feedlot Pack</en>
+        <de>Baubares Gehege-Pack</de>
+        <fr>Enclos À Bétail Modulaire</fr>
+    </title>
+    <description>
+<en><![CDATA[This pack contains 2 pens for cows, a milk extension, a slurry extension, a fill trigger for the extensions and 1 decorative objects. More decorations to come in a later update!
+- Price: $25000
+- Daily Upkeep: $50
+- Capacity: 1000 cows
+
+- Tire Tank $250
+- Milk Storage $500 Capacity: 1000000 L
+- Slurry Storage $500 Capacity: 10000000 L
+- Open Heap $500 Capacity: 4000000 L
+]]>
+</en>
+<de><![CDATA[Diese Packung enthält 2 Stalls für Kühe, eine Milchverlängerung, eine Gülleverlängerung, einen Füllauslöser für die Erweiterungen und 1 Dekorationsgegenstände. Weitere Dekorationen folgen in einem späteren Update! 
+- Preis: 25.000 €
+- Unterhalt: 50 €
+- Kapazität: 1000 Kühe
+
+- Reifentränke 250 €
+- Milchlagerung 500 € Kapazität: 1000000 L
+- Güllelagerung 500 € Kapazität: 10000000 L
+- Heap öffnen 500 € Kapazität: 4000000 L
+]]>
+</de>
+<fr><![CDATA[Ce pack contient 2 enclos pour vaches, une rallonge pour le lait, une rallonge pour le lisier, une gâchette de remplissage pour les rallonges et 1 objets de décoration. Plus de décorations à venir dans une mise à jour ultérieure ! 
+- Prix : 25 000 € 
+- Entretien quotidien : 50 €
+- Capacité : 1000 vaches
+
+- Réservoir en forme de pneu 250 €
+- Silos à lait 500 € Capacité: 1000000 L
+- Silo à lisier 500 € Capacité: 10000000 L
+- Tas ouvert 500 € Capacité: 4000000 L
+]]>
+</fr>
+
+    </description>
+    <multiplayer supported="true"/>
+	
+    <storeItems>
+        <storeItem xmlFilename="cattlePen.xml"/>
+		<storeItem xmlFilename="cattlePenBF.xml"/>		
+		<storeItem xmlFilename="tireTank.xml"/>
+		<storeItem xmlFilename="milkStorage.xml"/>
+		<storeItem xmlFilename="slurryStorage.xml"/>
+		<storeItem xmlFilename="fillingArea.xml"/>
+		<storeItem xmlFilename="openHeap.xml"/>
+    </storeItems>
+	
+</modDesc>

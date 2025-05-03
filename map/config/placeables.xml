@@ -4,4 +4,55 @@
         <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
         <configuration name="solarPanels" id="1" isActive="true"/>
     </placeable>
+	<placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/barracaoMetal/XML/BrMetalShed01.xml" uniqueId="barracao02" position="-29.65340614 165.8730011 -129.10713196" rotation="0 -50.74923325 0" farmId="1">
+        <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/barracaoMetal/XML/BrMetalShed01.xml" uniqueId="barracao03" position="-123.26596832 165.8730011 -39.99822998" rotation="0 -50.74923325 0" farmId="1">
+        <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
+        <configuration name="solarPanels" id="1" isActive="true"/>
+    </placeable>
+	<placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/silos/xml/farmSilo.xml" uniqueId="cargil" position="141.12872314 166.63475037 -44.66237259" rotation="0 -44.46006775 0" farmId="255">
+        <silo>
+            <storage index="1" farmId="255"/>
+        </silo>
+    </placeable>
+	<placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/sellingPoints/grainMill.xml" uniqueId="venda1" position="138.93429565 168.99417114 -26.87440109" rotation="0 46.00000381 0" farmId="255">
+        <silo>
+            <storage index="1" farmId="255"/>
+        </silo>
+    </placeable>
+	<!--------------------------------------------- casas------------------------------------------------------>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa1" position="-128.4360199 167.50753784 93.63640594" rotation="0 34.17905807 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa2" position="-117.26379395 167.50753784 110.08876038" rotation="0 34.17905807 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa3" position="-107.20223236 167.50753784 124.90557861" rotation="0 34.17905807 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa4" position="-96.95174408 167.50753784 140.00064087" rotation="0 34.17905807 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa5" position="147.95291138 164.98487854 152.19012451" rotation="0 4.27035618 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa6" position="145.74229431 164.98487854 122.58503723" rotation="0 4.27035618 0" farmId="255">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa7" position="138.48445129 164.98487854 87.03011322" rotation="0 4.27035618 0" farmId="1">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
+	 <placeable modName="FS25_Fazenda_Copa_Cabana" filename="$mapdir$/map/placeables/casas/dom.xml" uniqueId="casa8" position="-97.80045319 167.50753784 24.90717888" rotation="0 34.17905807 0" farmId="1">
+        <farmhouse isFreeForAll="false"/>
+        <wardrobe isFreeForAll="false"/>
+    </placeable>
 </placeables>
