@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Gian FS</author>
+    <contributors>Frits</contributors>
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>BR Metal Shed</en>
+        <de>BR Metallschuppen</de>
+        <fr>BR Hangar Métallique</fr>
+        <br>Galpão De Metal BR</br>
+    </title>
+
+<description>
+<en>
+<![CDATA[BR Metal Shed
+Aluzinc shed typical of southern Brazil..
+
+- Initial Price: $10,000;
+- Color Configuration;
+- Design Configuration
+- The lights must be turned on manually at the switch.]]>
+</en>
+<de>
+<![CDATA[BR Metallschuppen
+Für Südbrasilien typischer Aluzinkschuppen..
+
+- Anfangspreis: 10.000 €;
+- Farbkonfiguration;
+- Designkonfiguration
+- Die Lichter müssen manuell am Schalter eingeschaltet werden.]]>
+</de>
+<fr>
+<![CDATA[BR hangar métallique
+Hangar à aluzinc typique du sud du Brésil..
+
+- Prix initial : 10 000 € ;
+- Configuration des couleurs ;
+- Configuration du design
+- Les lumières doivent être allumées manuellement à l'interrupteur.]]>
+</fr>
+<br>
+<![CDATA[Galpão de metal BR
+Galpão de aluzinco típico da região sul do Brasil..
+
+- Preço Inicial: $10.000;
+- Configuração de cores;
+- Configuração de Design
+- As luzes devem ser ligadas manualmente no interruptor.]]>
+</br>
+    </description>	
+
+    <iconFilename>icon_BrMetalShed.dds</iconFilename>
+	
+    <multiplayer supported="true"/>
+    
+    <storeItems>
+        <storeItem xmlFilename="XML/BrMetalShed01.xml"/>
+    </storeItems>
+
+    <l10n>			
+		<text name="configuration_aberto"> 
+		    <en>Open Shed</en>
+		    <de>Offener Schuppen</de>
+            <fr>Hangar Ouvert</fr>
+			<br>Galpão Aberto</br>
+		</text>	
+        <text name="configuration_Laterais"> 
+		    <en>Zinc Sides</en>
+		    <de>Zinkseiten</de>
+            <fr>Côtés en Zinc</fr>
+			<br>Laterais de Zinco</br>
+		</text>	
+        <text name="configuration_muro1"> 
+		    <en>Wall 1</en>
+		    <de>Mauer 1</de>
+            <fr>Mur 1</fr>
+			<br>Muro 1</br>
+		</text>	
+        <text name="configuration_muro2"> 
+		    <en>Wall 2</en>
+		    <de>Mauer 2</de>
+            <fr>Mur 2</fr>
+			<br>Muro 2</br>
+		</text>	
+        <text name="configuration_muroLaterais1"> 
+		    <en>Zinc Sides + Wall 1</en>
+		    <de>Zinkseiten + Wand 1</de>
+            <fr>Côtés en zinc + Mur 1</fr>
+			<br>Laterais de Zinco + Muro 1</br>
+		</text>	
+        <text name="configuration_muroLaterais2"> 
+		    <en>Zinc Sides + Wall 2</en>
+		    <de>Zinkseiten + Wand 2</de>
+            <fr>Côtés en zinc + Mur 2</fr>
+			<br>Laterais de Zinco + Muro 2</br>
+		</text>	
+	</l10n>
+</modDesc>

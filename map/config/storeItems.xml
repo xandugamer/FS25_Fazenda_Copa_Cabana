@@ -64,5 +64,6 @@
     <storeItem xmlFilename="$data/foliage/decoBush/decoBushUS/paintable_witchHazel02.xml" />
 
 <!-- DECORATION -->
+	<storeItem xmlFilename="data/map/placeables/barracaoMetal/XML/BrMetalShed01.xml"/>
     <storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" /> <!-- showInStore false -->
 </storeItems>

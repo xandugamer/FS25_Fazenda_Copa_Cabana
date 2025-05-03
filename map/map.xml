@@ -93,9 +93,9 @@
     
     <groundTypeMappings>
     
-        <groundTypeMapping type="dirt" title="$l10n_groundType_dirt" layer="MUDLIGHT" />
+        <groundTypeMapping type="dirt" title="$l10n_groundType_dirt" layer="DIRT" />
     
-        <groundTypeMapping type="asphalt" title="$l10n_groundType_asphalt" layer="ASPHALT" />
+        <groundTypeMapping type="asphalt" title="$l10n_groundType_asphalt" layer="DIRT" />
         <groundTypeMapping type="gravel" title="$l10n_groundType_gravel" layer="GRAVELSMALL" />
         <groundTypeMapping type="grass" title="$l10n_groundType_grass" layer="GRASS" />
         <groundTypeMapping type="animalMud" title="$l10n_groundType_animalMud" layer="MUD_TRACKS" />

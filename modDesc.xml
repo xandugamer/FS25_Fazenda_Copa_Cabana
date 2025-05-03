@@ -34,7 +34,7 @@ Shopkategorie: Maps
 	
 	
 
-    <!--storeItems>
-        <storeItem xmlFilename="dc401.xml"/>
-    </storeItems-->
+    <storeItems>
+        <storeItem xmlFilename="map/placeables/barracaoMetal/XML/BrMetalShed01.xml"/>
+    </storeItems>
 </modDesc>

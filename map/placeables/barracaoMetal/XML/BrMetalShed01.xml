@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+            <en>BR Metal Shed</en>
+            <de>BR Metallschuppen</de>
+            <fr>BR hangar métallique</fr>
+            <br>Galpão de metal BR</br>
+        </name>
+        <functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>Store/store_BrMetalShed01.dds</image>
+        <price>10000</price>
+        <dailyUpkeep>60</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>sheds</tab>
+        </brush>
+        
+        <storeIconRendering>
+            <settings cameraXRot="-5" cameraYRot="35" />
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>1497856</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>224768</indexBufferMemoryUsage>
+        <textureMemoryUsage>3145728</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>I3D/BrMetalShed01.i3d</filename>
+        <boughtWithFarmland>false</boughtWithFarmland>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode01" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode02" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode03" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode04" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode05" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light150.xml" linkNode="lightNode06" groupIndex="1">
+        </sharedLight>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+    </lights>
+
+    <colorConfigurations useDefaultColors="true">
+        <material slotName="Estrutura1_mat" />
+        <material slotName="Estrutura2_mat" />
+    </colorConfigurations>
+
+    <solarPanels>
+        <solarPanelsConfigurations title="Design">
+            <solarPanelsConfiguration name="$l10n_configuration_aberto" price="0" >
+                <objectChange node="ZincosLaterais" visibilityActive="false"/>
+                <objectChange node="Tijolos" visibilityActive="false"/>
+
+                <objectChange node="CollisionZincoLateral" translationActive="0 -0.96389329 0" />
+                <objectChange node="CollisionZincoLateral" scaleActive="0.97000003 0.03 0.0061825" />
+                <objectChange node="CollisionMuro" translationActive="0 -0.82113045 0" />
+                <objectChange node="CollisionMuro" scaleActive="0.98581177 0.03 0.01" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_Laterais" price="2000" >
+                <objectChange node="ZincosLaterais" visibilityActive="true"/>
+                <objectChange node="Tijolos" visibilityActive="false"/>
+
+                <objectChange node="CollisionMuro" translationActive="0 -0.82113045 0" />
+                <objectChange node="CollisionMuro" scaleActive="0.98581177 0.03 0.01" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_muro1" price="2800"  >
+                <objectChange node="ZincosLaterais" visibilityActive="false"/>
+                <objectChange node="Tijolos" visibilityActive="true"/>
+                <objectChange node="Tijolos1" visibilityActive="true"/>
+
+                <objectChange node="CollisionZincoLateral" translationActive="0 -0.96389329 0" />
+                <objectChange node="CollisionZincoLateral" scaleActive="0.97000003 0.03 0.0061825" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_muro2" price="2900"  >
+                <objectChange node="ZincosLaterais" visibilityActive="false"/>
+                <objectChange node="Tijolos" visibilityActive="true"/>
+                <objectChange node="Tijolos2" visibilityActive="true"/>
+
+                <objectChange node="CollisionZincoLateral" translationActive="0 -0.96389329 0" />
+                <objectChange node="CollisionZincoLateral" scaleActive="0.97000003 0.03 0.0061825" />
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_muroLaterais1"  price="3800" >
+                <objectChange node="ZincosLaterais" visibilityActive="true"/>
+                <objectChange node="Tijolos" visibilityActive="true"/>
+                <objectChange node="Tijolos1" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+
+            <solarPanelsConfiguration name="$l10n_configuration_muroLaterais2"  price="3900" >
+                <objectChange node="ZincosLaterais" visibilityActive="true"/>
+                <objectChange node="Tijolos" visibilityActive="true"/>
+                <objectChange node="Tijolos2" visibilityActive="true"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+
+    <i3dMappings>
+        <i3dMapping id="clearArea1Start" node="0|0"/>
+        <i3dMapping id="clearArea1Width" node="0|0|0"/>
+        <i3dMapping id="clearArea1Height" node="0|0|1"/>
+        <i3dMapping id="levelArea1Start" node="1|0"/>
+        <i3dMapping id="levelArea1Width" node="1|0|0"/>
+        <i3dMapping id="levelArea1Height" node="1|0|1"/>
+        <i3dMapping id="indoorArea1Start" node="2|0"/>
+        <i3dMapping id="indoorArea1Width" node="2|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="2|0|1"/>
+        <i3dMapping id="testArea1Start" node="3|0"/>
+        <i3dMapping id="testArea1End" node="3|0|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="4|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="4|0|0"/>
+        <i3dMapping id="realLightsLow" node="0>6|0|0"/>
+        <i3dMapping id="realLightsHigh" node="0>6|0|1"/>
+
+        <i3dMapping id="lightNode01" node="0>6|1"/>
+        <i3dMapping id="lightNode02" node="0>6|2"/>
+        <i3dMapping id="lightNode03" node="0>6|3"/>
+        <i3dMapping id="lightNode04" node="0>6|4"/>
+        <i3dMapping id="lightNode05" node="0>6|5"/>
+        <i3dMapping id="lightNode06" node="0>6|6"/>
+        <i3dMapping id="powerSwitch01" node="0>6|7"/>
+        <i3dMapping id="lightTrigger" node="0>6|8"/>
+
+
+        <i3dMapping id="ZincosLaterais" node="0>7|4"/>
+        <i3dMapping id="Tijolos" node="0>7|5"/>
+        <i3dMapping id="Tijolos1" node="0>7|5|3"/>
+        <i3dMapping id="Tijolos2" node="0>7|5|4"/>
+        <i3dMapping id="CollisionZincoLateral" node="0>7|4|1"/>
+        <i3dMapping id="CollisionMuro" node="0>7|5|0"/>
+    </i3dMappings>
+</placeable>

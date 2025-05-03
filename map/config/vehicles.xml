@@ -1,2 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicles/>
+<vehicles>
+    <vehicle filename="data/vehicles/newHolland/cr11/cr11.xml" uniqueId="vehicle90a6be470ddeee87bdc4fb00f5976004" age="0.000000" price="742000.000000" farmId="1" propertyState="OWNED" operatingTime="56.670773" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="11.559 165.599 -80.544" rotation="-6.12 -52.77 6.14"/>
+        <component index="2" position="13.277 166.332 -81.902" rotation="-6.11 -52.77 6.13"/>
+        <configuration name="fillUnit" id="1" isActive="true"/>
+        <configuration name="pipe" id="1" isActive="false"/>
+        <configuration name="pipe" id="2" isActive="true"/>
+        <configuration name="design" id="1" isActive="true"/>
+        <configuration name="fillVolume" id="1" isActive="true"/>
+        <configuration name="folding" id="1" isActive="true"/>
+        <configuration name="motor" id="1" isActive="true"/>
+        <configuration name="wheel" id="TWIN_FRONT_MICHELIN_cereXBib" isActive="true"/>
+        <configuration name="wheel" id="CRAWLER_MICHELIN_cereXBib" isActive="false"/>
+        <washable>
+            <dirtNode amount="0.004438" wetness="0.000000"/>
+            <dirtNode amount="0.004438" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.004438" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.004438" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.004438" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+        </washable>
+        <wearable damage="0.000367">
+            <wearNode amount="0.000430"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="0.000000"/>
+            <movingTool rotation="0.000000"/>
+        </cylindered>
+        <wheels lastConfigId="TWIN_FRONT_MICHELIN_cereXBib"/>
+        <enterable activeCameraIndex="1" isTabbable="true" isLeavingAllowed="true">
+            <camera rotation="-10.06 144.75 0.00" translation="0.000 0.000 23.250" zoom="23.250010" fovY="54.432205"/>
+            <camera rotation="-30.00 180.00 0.00" translation="0.000 3.601 3.028" zoom="4.705138" fovY="75.000008"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+            <unit index="2" fillType="DIESEL" fillLevel="1499.000000"/>
+            <unit index="3" fillType="DEF" fillLevel="163.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="40" cruiseControlReverse="20"/>
+        <aiFieldWorker isActive="false"/>
+        <aiJobVehicle isAIStartAllowed="true"/>
+        <aiAutomaticSteering courseWasActive="true" isOnField="false"/>
+        <aiModeSelection currentMode="WORKER"/>
+        <attacherJoints comboDirection="-1"/>
+        <dischargeable isAllowed="true"/>
+        <foldable foldAnimTime="0.000000" isAllowed="true"/>
+        <combine isSwathActive="false" workedHectars="0.000000" numAttachedCutters="0"/>
+        <pipe state="1" isStateChangeAllowed="true"/>
+    </vehicle>
+    <vehicle filename="data/vehicles/newHolland/fd250/fd250.xml" uniqueId="vehicle35adbed20714cfc869a441f1bef5598e" age="0.000000" price="147750.000000" farmId="1" propertyState="OWNED" operatingTime="25.511105" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="23.486 167.004 -66.272" rotation="-25.69 50.30 -1.66"/>
+        <component index="2" position="26.942 167.763 -70.391" rotation="-25.78 50.31 -1.60"/>
+        <component index="3" position="20.095 167.957 -62.140" rotation="-25.80 50.30 -1.67"/>
+        <component index="4" position="22.746 167.604 -66.901" rotation="-20.76 50.30 -1.66"/>
+        <component index="5" position="26.452 166.907 -70.375" rotation="-177.74 35.14 -178.03"/>
+        <component index="6" position="27.296 166.597 -71.556" rotation="-173.63 35.14 -177.99"/>
+        <configuration name="cylindered" id="1" isActive="false"/>
+        <configuration name="cylindered" id="2" isActive="true"/>
+        <configuration name="designColor" id="1" isActive="true"/>
+        <configuration name="design" id="1" isActive="false"/>
+        <configuration name="design" id="2" isActive="true"/>
+        <configuration name="animation" id="1" isActive="false"/>
+        <configuration name="animation" id="2" isActive="true"/>
+        <configuration name="folding" id="1" isActive="false"/>
+        <configuration name="folding" id="2" isActive="true"/>
+        <configuration name="component" id="1" isActive="false"/>
+        <configuration name="component" id="2" isActive="true"/>
+        <configuration name="inputAttacherJoint" id="1" isActive="false"/>
+        <configuration name="inputAttacherJoint" id="2" isActive="true"/>
+        <configuration name="wheel" id="1" isActive="false"/>
+        <configuration name="wheel" id="2" isActive="true"/>
+        <washable>
+            <dirtNode amount="0.002144" wetness="0.000000"/>
+            <dirtNode amount="0.002144" wetness="0.000000"/>
+            <dirtNode amount="0.002144" wetness="0.000000"/>
+            <dirtNode amount="0.002144" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.002144" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+            <dirtNode amount="0.002144" wetness="0.000000" snowScale="0.000000"/>
+            <dirtNode amount="0.000000" wetness="0.000000"/>
+        </washable>
+        <wearable damage="0.000155">
+            <wearNode amount="0.000201"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="-20.000000"/>
+            <movingTool rotation="-20.000000"/>
+            <movingTool rotation="-20.000000"/>
+            <movingTool translation="-0.100000"/>
+            <movingTool translation="-0.100000"/>
+            <movingTool translation="-0.100000"/>
+        </cylindered>
+        <wheels lastConfigId="2"/>
+        <attachable lowerAnimTime="0.000000" isDetachingBlocked="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="0.000000" isAllowed="true"/>
+        <fruitExtraObjects lastFruitType="UNKNOWN"/>
+        <cutter cutHeight="0.150000"/>
+    </vehicle>
+</vehicles>
